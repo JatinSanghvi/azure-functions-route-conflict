@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "a2proxy": {
+            "matchCondition": {
+                "methods": [
+                    "POST"
+                ],
+                "route": "a1function"
+            },
+            "backendUri": "https://example.com"
+        },
+        "b1proxy": {
+            "matchCondition": {
+                "methods": [
+                    "POST"
+                ],
+                "route": "b2function"
+            },
+            "backendUri": "https://example.com"
+        },
+        "c2proxy": {
+            "matchCondition": {
+                "methods": [
+                    "POST"
+                ],
+                "route": "c1function"
+            },
+            "backendUri": "https://example.com"
+        },
+        "d1proxy": {
+            "matchCondition": {
+                "methods": [
+                    "POST"
+                ],
+                "route": "d2function"
+            },
+            "backendUri": "https://example.com"
+        }
+    }
+}
